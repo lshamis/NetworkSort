@@ -128,7 +128,8 @@ struct CeilLog2 {
  * A do-nothing action.
  */
 struct NoOp {
-  static void action(auto&&, auto&&) {}
+  template <typename RandomIterator, typename Comparator>
+  static void action(RandomIterator, Comparator) {}
 };
 
 /**
