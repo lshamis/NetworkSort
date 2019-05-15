@@ -8,7 +8,7 @@ cc_binary(
   srcs = ["run_benchmarks.cc"],
   deps = [
     ":network_sort",
-    "@benchmark//:benchmark",
+    "@com_github_google_benchmark//:benchmark_main",
   ],
 )
 
